@@ -1,0 +1,225 @@
+.app {
+  margin: 0;
+}
+.name-container {
+  padding: 5px 60px;
+  font-size: larger;
+  color: #6ef43d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.nav-button:hover {
+  scale: 105%;
+}
+.nav-button {
+  border: 2px solid rgb(59, 52, 52);
+  border-radius: 100px;
+
+  color: rgb(62, 50, 50);
+
+  padding: 15px 30px;
+}
+.nav-button:hover {
+  font-weight: bolder;
+  background-color: #4c4646;
+  background-color: linear-gradient(45deg, #d0d7f8 10%, #2a347a 46%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-center {
+  border: 2px solid rgb(74, 61, 61);
+  border-radius: 30px;
+  padding: 5px 5px;
+  color: rgb(70, 63, 63);
+  /* background-color: #d24a4a; */
+}
+.nav-center:hover {
+  background-color: #444141;
+  background-color: linear-gradient(45deg, #11193e 10%, #2a347a 46%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-resume {
+  padding: 20px 40px;
+  border: 2px solid #ffffff;
+}
+.Intro-button {
+  padding: 20px 40px;
+  border: 2px solid #ffffff;
+}
+.Intro-button:hover {
+  border-color: purple;
+  scale: 115%;
+}
+.nav-resume:hover {
+  border-color: purple;
+}
+.nav_middle {
+  padding: 10px 5px;
+  font-weight: 200;
+}
+.nav_middle:hover {
+  text-transform: uppercase;
+  transition: 10ms ease-in-out;
+  color: rgb(8, 100, 103);
+  scale: 101%;
+  font-weight: 700;
+}
+
+.nav_title {
+  animation-name: color;
+  animation-duration: 5s;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: white; */
+  /* font-family: Times New Roman; */
+}
+
+@keyframes color {
+  0% {
+    text-decoration-color: red;
+  }
+
+  50% {
+    text-decoration-color: orange;
+  }
+
+  100% {
+    text-decoration-color: brown;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.animation {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coding-gif {
+  width: 500px;
+  height: 500px;
+  border-radius: 200px;
+  background-color: transparent;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #214be0;
+  overflow: hidden;
+  text-align: center;
+  max-width: 800px;
+}
+
+.animated-text {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.highlight {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff6b6b, #ffd93d, #4d96ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: glow 3s infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ff6b6b, 0 0 10px #ffd93d, 0 0 15px #4d96ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffd93d, 0 0 20px #4d96ff, 0 0 30px #ff6b6b;
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  opacity: 0.9;
+  color: #ab2626;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #ff6b6b, #ffd93d, #4d96ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: glow 3s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Intro-button a {
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Intro-button:hover a {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-resume a {
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-resume:hover a {
+  color: #007bff;
+}
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item .progress-bar .progress:hover {
+  background-color: #11193e;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+}

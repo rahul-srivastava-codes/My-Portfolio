@@ -1,23 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
+import "../../src/App.css";
+
 function Services_componenent() {
+  const [data, setData] = useState([
+    {
+      id: 1,
+      title: "My Portfolio",
+      description:
+        "Designed own portfolio. Technology used are html, css, JS, React , Tailwind,GSAP",
+      icon: <FaLongArrowAltRight />,
+    },
+    {
+      id: 2,
+      title: "TODO",
+      description:
+        "Built various websites for various clients. Technologies used are html, css, JS, React, Node.js, Express.js, MongoDB",
+      icon: <FaLongArrowAltRight />,
+    },
+  ]);
   return (
-    <div>
-      <div className="ml-9 mt-6 mb-6 border-2 border-orange-600 rounded-lg px-3 py-1 w-[350px] h-[220px]">
-        <div>01</div>
-        <div className="text-2xl">Web design</div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni
-          quam nisi! Modi, asperiores laudantium.
-        </div>
-        <br />
-        <br />
-        <div className="flex justify-start items-center gap-2">
-          <div>Read More</div>
-          <FaLongArrowAltRight />
-        </div>
-      </div>
+    <div className="flex px-2 py-4 h-[40px] w-[160px]">
+      {data.map((e) => {
+        return (
+          <div key={e.id} className="box px-4 py-4 h-[30px] w-[500px] gap-2">
+            <div>{e.title}</div>
+            <div>{e.description}</div>
+            <div>{e.icon}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }
