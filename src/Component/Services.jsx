@@ -8,6 +8,20 @@ const Projects = () => {
       description:
         "A personal portfolio to showcase my skills, projects, and experience.",
       technologies: ["HTML", "CSS", "React", "JavaScript", "Tailwind CSS"],
+      link: "https://my-portfolio-zeta-umber-54.vercel.app/",
+    },
+    {
+      title: "3D Portfolio",
+      description:
+        "3D portfolio which showcases animation using gsap and locomotive scroller",
+      technologies: ["HTML", "CSS", "JavaScript", "GSAP"],
+      link: "https://3d-animated-webpage.vercel.app/",
+    },
+    {
+      title: "Calculator",
+      description: "Simple calculator ",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      link: "https://calculator-assignment-kappa.vercel.app/",
     },
     {
       title: "To-Do App",
@@ -100,6 +114,11 @@ const Projects = () => {
             >
               {project.description}
             </p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <button className="px-2 bg-slate-700 text-white rounded-lg hover:bg-slate-400">
+                Open live preview
+              </button>
+            </a>
             <h4
               style={{
                 fontSize: "16px",
